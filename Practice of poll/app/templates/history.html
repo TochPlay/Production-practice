@@ -1,0 +1,20 @@
+<h2>Історія прогнозів</h2>
+
+<table border="1">
+<tr>
+    <th>Обʼєм</th>
+    <th>Температура</th>
+    <th>Результат</th>
+</tr>
+
+{% for row in data %}
+<tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<a href="/">Назад</a>
